@@ -73,7 +73,7 @@ criteria <- data.frame(cbind(
 "Criteria"=c("Very High","High","Enough","Low","Very Low")
 ))
 knitr::kable(criteria, caption = "Interpretación de la V de Aiken", escape = FALSE) %>%
-add_footnote("Oksaviona, Islami y Nasir con base en Azwar (2012)", notation = "alphabet", escape=FALSE )
+add_footnote("Oksaviona, Islami y Nasir con base en Azwar (2012).  ", notation = "alphabet", escape=FALSE )
 ```
 
 Y aunque la V de Aiken provee un marco útil para hacer interpretaciones sobre el nivel de relevancia de contenido de un reactivo (ítem), el proceso inferencial para hacer conclusiones tiene desventajas. Primero, es que el valor crítico de V ($V_p$) es 0.5, un valor que resulta arbitrario, debido a que usar valores más altos pudiera ser de mayor interés para incluirlos en la escala. En segundo lugar, el cálculo binomial para hacer la prueba de hipótesis sobre la cola de probabilidad puede ser intensivo, por lo que se debe realizar a mano o con la ayuda de software. En tercero, la naturaleza discreta de los datos presenta dificultades para hacer conclusiones inferenciales cuando el número de evaluadores es pequeño, debido a que no corresponden de manera precisa con el error Tipo I, por lo que las conclusiones pueden ser inexactas. Cuarto, el resultado dice poco sobre la el valor de $V_p$. En quinto lugar, la prueba de hipótesis no aporta información sobre el error de $V$ como estimación de $V_p$.
