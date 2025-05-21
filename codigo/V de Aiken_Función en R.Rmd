@@ -4,12 +4,12 @@ author: "Alfonso Cano Robles"
 lang: "es-MX"
 self_contained: true
 output:
-  bookdown::pdf_document2:
-    fig_caption: yes
-    toc: FALSE
   bookdown::html_document2:
     mathjax: local
     self_contained: false
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: FALSE
 header-includes:
   - |
     ```{=latex}
@@ -230,7 +230,7 @@ aiken_vals1  <- v_aiken(
                  x = test_v,  # La tabla con los datos.
                  lo = 1,      # El valor mínimo posible en la escala.
                  hi = 5,      # El valor máximo en la escala.
-                 p = 0.95)     # El nibel de significación. En este caso "0.95".
+                 p = 0.95)     # El nivel de significación. En este caso "0.95".
 ```
 Como se mencionó más arriba se puede también utilizar un $\alpha = 0.10$, si se coloca una probabilidad acumulada de "0.90".
 
